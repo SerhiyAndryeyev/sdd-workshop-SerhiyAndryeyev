@@ -1,0 +1,40 @@
+---
+description: Одна тема на файл у docs і заголовок із поясненням навіщо
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Документи в docs
+
+Кожен файл у `docs/` описує одну тему. Заголовок H1 називає тему і пояснює, навіщо документ існує.
+
+## Одна тема
+
+- Файл покриває один предмет: іменування, GitFlow, conventional commits — кожен окремо.
+- Секції H2 розкривають аспекти тієї самої теми.
+- Друга незалежна тема — новий файл. Ім’я файлу повторює тему (`gitflow.md`, `conventional-commits.md`).
+
+## Заголовок із «навіщо»
+
+- H1 має форму `# <тема>, щоб <навіщо>` або `# <тема>: <навіщо>`.
+- Одразу під H1 — 1–3 речення: для кого документ і яке рішення він знімає.
+- Голий заголовок-іменник без мети не використовуй.
+
+```markdown
+# Naming
+
+## Components
+...
+
+## GitFlow
+...
+```
+
+```markdown
+# File naming, so a new module matches files already in the repo
+
+This file is for anyone adding a component, test, or style file. It fixes names only, so the folder layout stays predictable.
+
+## Components
+...
+```
