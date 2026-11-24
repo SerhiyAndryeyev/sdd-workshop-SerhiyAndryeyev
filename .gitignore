@@ -7,6 +7,8 @@
 /workspace.xml
 /.idea
 .vscode/
+.cursor/mcp.json
+ignored-docs/
 .DS_Store/
 
 # dependencies
